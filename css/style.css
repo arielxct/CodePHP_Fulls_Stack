@@ -60,11 +60,11 @@
 
     /* background-image: url('/Integrador/image/ba11260x697gris.png'); */
 
-    /* background-image: url("../image/ba11260x697barro.png"); */
+     background-image: url("../image/ba11290x780barro.png");
 
         background-color: white;
        padding: 0px;
-        height: 750px; 
+        height: 735px; 
          
    }
    .fila1{
@@ -146,11 +146,31 @@
    
    }
 
+   
    .alineo_botes_y_texto{
     display: block;
     justify-content: left;
     text-align: initial; 
     
+   }
+
+   .cuadro_precios1{
+    background-color: white;
+    border-color: blue;
+    border-style: solid;
+    text-align: center;
+   }
+   .cuadro_precios2{
+    background-color: white;
+    border-color: cornflowerblue;
+    border-style: solid;
+    text-align: center;
+   }
+   .cuadro_precios3{
+    background-color: white;
+    border-color: orange;
+    border-style: solid;
+    text-align: center;
    }
 
    .btn-warning  {
@@ -173,6 +193,11 @@
    .card-text{
     font-size: 12px;
    }
+   .card-porcentaje{
+    font-size: 17px;
+    font-weight: bold;
+    
+   }
 
    /* imagen y texto */
    .imagen_y_texto{
@@ -183,8 +208,21 @@
    .mb-3{
     padding: 0px;
     margin: 0px;
+    
    
    }
+    
+   .color_total_pagar{
+    display: none;
+   } 
+
+   .a_total_pagar{
+    background-color: rgb(204, 229, 255);
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+   }
+
   
    .g-0{
     margin: 0px;
@@ -238,6 +276,14 @@
     margin-top: 6px;
     background-color: white;
     }
+    .col-75-email {
+      float: left;
+    width: 100%;
+    margin-top: 6px;
+    background-color: rgb(128, 10, 10);
+
+
+    }
   .izquierdoForm{
     background-color: white;
     }
@@ -248,12 +294,22 @@
   .form-nombre{
     background-color: white;
      width: 100%;
+    
   }
   .form-apellido{
     background-color: white;
     width: 100%;
   }
+.form-cantidad{
+  text-align: left;
+}
+.form-categoria{
+  text-align: left;
+}
 
+.form-label{
+  background-color: rgb(204, 229, 255);
+}
   .pequeño_mensaje{
     /* font-size: 10px; */
     color: grey;
@@ -282,13 +338,76 @@
   input[type=submit]:hover {
     background-color: #45a049;
   }
+  input[type=button] {
+    background-color:   #96c93e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* float:inline-start; */
+    width: 100%;
+  }
+
+  input[type=button]:hover {
+    background-color: #45a049;
+  }
+
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-   @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px)  */
+  /* @media screen and (max-width: 600px ) */
+  /* @media screen and (min-width: 601px ){
+
+    .menu_chico{
+      display: none;
+    } 
+  }*/
+  @media screen and (min-width: 601px ){
+
+    .menu_chico{
+      display: none;
+        
+      
+    }
+    
+  } 
+
+
+   @media screen and (max-width: 600px ) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
       margin-top: 0;
     } 
+    .menu_grande{
+      display: none;
+
+    }
+    .menu_chico{
+      display: block;
+        visibility: visible;
+      
+    }
+    
+   
+    .parrafo_tarjeta{
+      font-size: small;
+    }
+    .conf_bs_as, .logo{
+      display: none;
+    }
   }
+  
+  /* @media screen and (min-width: 600px ){
+
+    .header2{
+      display: none;
+    } 
+  } */
+
+
+
+
+
 /*  FIN DE FORMULARIO AGREGADO */
 /* footer */
 .btn-light{
